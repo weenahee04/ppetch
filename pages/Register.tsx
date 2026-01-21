@@ -105,9 +105,9 @@ export const Register: React.FC<RegisterProps> = ({ onBack, onRegisterSuccess })
         <div className="max-w-[1200px] mx-auto px-4 h-full flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer" onClick={onBack}>
              <div className="w-10 h-10 bg-black rounded flex items-center justify-center border border-[#fwd] shadow-sm">
-                <span className="text-[#eebf34] font-serif font-bold text-2xl">S</span>
+                <span className="text-[#eebf34] font-serif font-bold text-2xl">B</span>
             </div>
-            <span className="text-black font-black text-3xl tracking-tight">SUAY</span>
+            <span className="text-black font-black text-3xl tracking-tight">บ้านหวย</span>
           </div>
           <div className="text-white text-xl font-medium drop-shadow-md">
             สมัครสมาชิก

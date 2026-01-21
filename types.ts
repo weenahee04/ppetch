@@ -9,7 +9,7 @@ export interface AuthState {
   error: string | null;
 }
 
-export type PageView = 'landing' | 'login' | 'register' | 'dashboard' | 'add-bank' | 'profile' | 'help' | 'affiliate' | 'deposit' | 'withdraw' | 'betting' | 'results' | 'contact' | 'poy' | 'jackpot' | 'games' | 'number-sets' | 'invite_friend';
+export type PageView = 'landing' | 'login' | 'register' | 'dashboard' | 'add-bank' | 'profile' | 'help' | 'affiliate' | 'deposit' | 'withdraw' | 'betting' | 'results' | 'contact' | 'poy' | 'jackpot' | 'games' | 'number-sets' | 'invite_friend' | 'admin';
 
 export interface LuckyNumberResponse {
   mainNumber: string;

@@ -17,9 +17,9 @@ export const AddBankAccount: React.FC<AddBankAccountProps> = ({ onBack, username
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-1">
                 <div className="w-7 h-7 bg-black rounded flex items-center justify-center border border-gold-300 shadow-sm">
-                    <span className="text-[#eebf34] font-serif font-bold text-lg">S</span>
+                    <span className="text-[#eebf34] font-serif font-bold text-lg">B</span>
                 </div>
-                <span className="text-black font-black text-xl tracking-tight font-sans">SUAY</span>
+                <span className="text-black font-black text-xl tracking-tight font-sans">บ้านหวย</span>
             </div>
             
             {/* Jackpot Button */}

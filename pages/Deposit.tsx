@@ -11,9 +11,9 @@ export const Deposit: React.FC<DepositProps> = ({ onBack }) => {
       <header className="bg-gradient-to-r from-[#eebf34] via-[#d4a017] to-[#b08528] h-[50px] shadow-md relative z-50 flex items-center justify-between px-4">
           <div className="flex items-center gap-2 cursor-pointer" onClick={onBack}>
              <div className="w-8 h-8 bg-black rounded flex items-center justify-center border border-gold-300 shadow-sm">
-                <span className="text-[#eebf34] font-serif font-bold text-lg">S</span>
+                <span className="text-[#eebf34] font-serif font-bold text-lg">B</span>
             </div>
-            <span className="text-black font-black text-2xl tracking-tight font-sans">SUAY</span>
+            <span className="text-black font-black text-2xl tracking-tight font-sans">บ้านหวย</span>
           </div>
           <div className="text-white font-bold text-lg drop-shadow-md">แจ้งเติมเงิน</div>
       </header>
@@ -45,7 +45,7 @@ export const Deposit: React.FC<DepositProps> = ({ onBack }) => {
                             <div>
                                 <div className="font-bold text-gray-800">ธนาคารกสิกรไทย</div>
                                 <div className="text-lg text-[#b08528] font-mono font-bold">123-4-56789-0</div>
-                                <div className="text-xs text-gray-500">นาย สวย มั่งคั่ง</div>
+                                <div className="text-xs text-gray-500">นาย บ้านหวย มั่งคั่ง</div>
                             </div>
                             <div className="absolute top-2 right-2 text-[#b08528]">
                                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path></svg>
@@ -56,7 +56,7 @@ export const Deposit: React.FC<DepositProps> = ({ onBack }) => {
                              <div>
                                 <div className="font-bold text-gray-800">ธนาคารไทยพาณิชย์</div>
                                 <div className="text-lg text-gray-600 font-mono">987-6-54321-0</div>
-                                <div className="text-xs text-gray-500">บริษัท สวย จำกัด</div>
+                                <div className="text-xs text-gray-500">บริษัท บ้านหวย จำกัด</div>
                             </div>
                         </div>
                     </div>

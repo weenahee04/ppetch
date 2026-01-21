@@ -8,6 +8,7 @@ interface LandingPageProps {
   setUsername: (s: string) => void;
   password: string;
   setPassword: (s: string) => void;
+  onGoAdmin?: () => void;
 }
 
 export const LandingPage: React.FC<LandingPageProps> = ({ 
@@ -17,7 +18,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({
   username, 
   setUsername, 
   password, 
-  setPassword 
+  setPassword,
+  onGoAdmin
 }) => {
   return (
     <div className="min-h-screen bg-[#111] font-sans text-white pb-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]">
@@ -29,9 +31,9 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center border border-gold-300 shadow-sm">
-                <span className="text-[#eebf34] font-serif font-bold text-xl">S</span>
+                <span className="text-[#eebf34] font-serif font-bold text-xl">B</span>
             </div>
-            <span className="text-black font-black text-2xl tracking-tight drop-shadow-sm font-sans">SUAY</span>
+            <span className="text-black font-black text-2xl tracking-tight drop-shadow-sm font-sans">บ้านหวย</span>
           </div>
 
           {/* Top Right Buttons */}
@@ -142,7 +144,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       <div className="max-w-[1200px] mx-auto px-2 sm:px-4 mt-4">
          <div className="w-full aspect-[21/6] bg-gray-800 rounded-lg overflow-hidden shadow-xl border border-gray-800 relative group cursor-pointer">
              <img 
-                src="https://placehold.co/1200x350/111/eebf34?text=Banner" 
+                src="https://placehold.co/1200x350/111/eebf34?text=Baan+Huay+Promotion" 
                 alt="Banner" 
                 className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
              />
@@ -285,12 +287,16 @@ export const LandingPage: React.FC<LandingPageProps> = ({
       </div>
 
       {/* Footer copyright */}
-      <div className="text-center text-gray-600 text-xs py-8 mt-8 border-t border-gray-800">
+      <div className="text-center text-gray-600 text-xs py-8 mt-8 border-t border-gray-800 relative group">
            <p>SECURE WEBSITE 🔒 GUARANTEED 100%</p>
-           <p className="mt-1">© 2026 Copyright • SUAY ALL RIGHTS RESERVED.</p>
+           <p className="mt-1">© 2026 Copyright • บ้านหวย ALL RIGHTS RESERVED.</p>
            <p className="mt-1">
                <span className="text-[#b08528] cursor-pointer hover:underline" onClick={onHelp}>กฎกติกา</span> • <span className="text-[#b08528] cursor-pointer hover:underline">ติดต่อเรา</span>
            </p>
+           {/* Secret Admin Entry */}
+           {onGoAdmin && (
+             <div onClick={onGoAdmin} className="absolute bottom-2 right-2 w-4 h-4 opacity-0 hover:opacity-100 cursor-pointer text-gray-800" title="Admin">⚙️</div>
+           )}
       </div>
 
     </div>

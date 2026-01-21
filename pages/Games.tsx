@@ -16,9 +16,9 @@ export const Games: React.FC<GamesProps> = ({ onBack }) => {
       <header className="bg-gradient-to-r from-[#eebf34] via-[#d4a017] to-[#b08528] h-[50px] shadow-md relative z-50 flex items-center justify-between px-4">
           <div className="flex items-center gap-2 cursor-pointer" onClick={onBack}>
              <div className="w-8 h-8 bg-black rounded flex items-center justify-center border border-gold-300 shadow-sm">
-                <span className="text-[#eebf34] font-serif font-bold text-lg">S</span>
+                <span className="text-[#eebf34] font-serif font-bold text-lg">B</span>
             </div>
-            <span className="text-black font-black text-2xl tracking-tight font-sans">SUAY</span>
+            <span className="text-black font-black text-2xl tracking-tight font-sans">บ้านหวย</span>
           </div>
           <div className="text-white font-bold text-lg drop-shadow-md">เกมเดิมพัน</div>
       </header>

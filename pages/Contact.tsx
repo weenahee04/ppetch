@@ -10,9 +10,9 @@ export const Contact: React.FC<ContactProps> = ({ onBack }) => {
       <header className="bg-gradient-to-r from-[#eebf34] via-[#d4a017] to-[#b08528] h-[50px] shadow-md relative z-50 flex items-center justify-between px-4">
           <div className="flex items-center gap-2 cursor-pointer" onClick={onBack}>
              <div className="w-8 h-8 bg-black rounded flex items-center justify-center border border-gold-300 shadow-sm">
-                <span className="text-[#eebf34] font-serif font-bold text-lg">S</span>
+                <span className="text-[#eebf34] font-serif font-bold text-lg">B</span>
             </div>
-            <span className="text-black font-black text-2xl tracking-tight font-sans">SUAY</span>
+            <span className="text-black font-black text-2xl tracking-tight font-sans">บ้านหวย</span>
           </div>
           <div className="text-white font-bold text-lg drop-shadow-md">ติดต่อเรา</div>
       </header>
@@ -29,17 +29,17 @@ export const Contact: React.FC<ContactProps> = ({ onBack }) => {
             <div className="space-y-4">
                 <a href="#" className="block bg-[#00B900] hover:bg-[#009900] text-white font-bold py-3 px-6 rounded-lg shadow transition flex items-center justify-center gap-3">
                     <span className="text-xl">LINE</span>
-                    <span>@SUAY_SUPPORT</span>
+                    <span>@BAANHUAY_SUPPORT</span>
                 </a>
                 
                 <a href="#" className="block bg-[#1877F2] hover:bg-[#1464cc] text-white font-bold py-3 px-6 rounded-lg shadow transition flex items-center justify-center gap-3">
                     <span className="text-xl">Facebook</span>
-                    <span>SUAY Official Fanpage</span>
+                    <span>บ้านหวย Official Fanpage</span>
                 </a>
 
                 <div className="border-t border-gray-100 pt-6 mt-6">
                     <p className="text-sm text-gray-600">
-                        อีเมล: <span className="font-bold text-gray-800">support@suay.com</span>
+                        อีเมล: <span className="font-bold text-gray-800">support@baanhuay.com</span>
                     </p>
                 </div>
             </div>

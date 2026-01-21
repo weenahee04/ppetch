@@ -8,7 +8,7 @@ interface AffiliateProps {
 
 export const Affiliate: React.FC<AffiliateProps> = ({ onBack, username }) => {
   const [activeTab, setActiveTab] = useState<'overview' | 'members' | 'income' | 'withdraw'>('overview');
-  const referralLink = `https://www.suay.com/register/aff/${username || 'GR726162'}`;
+  const referralLink = `https://www.baanhuay.com/register/aff/${username || 'GR726162'}`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(referralLink);
@@ -24,9 +24,9 @@ export const Affiliate: React.FC<AffiliateProps> = ({ onBack, username }) => {
                 {/* Logo */}
                 <div className="flex items-center gap-1 cursor-pointer" onClick={onBack}>
                     <div className="w-8 h-8 bg-black rounded flex items-center justify-center border border-gold-300 shadow-sm">
-                        <span className="text-[#eebf34] font-serif font-bold text-xl">S</span>
+                        <span className="text-[#eebf34] font-serif font-bold text-xl">B</span>
                     </div>
-                    <span className="text-black font-black text-2xl tracking-tight hidden sm:block">SUAY</span>
+                    <span className="text-black font-black text-2xl tracking-tight hidden sm:block">บ้านหวย</span>
                 </div>
                 
                 {/* Jackpot Ticker */}
@@ -208,7 +208,7 @@ export const Affiliate: React.FC<AffiliateProps> = ({ onBack, username }) => {
                              </button>
                          </div>
                          <p className="text-xs text-gray-500 mt-2">
-                            * หากพบปัญหา ลิงค์ถูกแบนจาก google, facebook หรือช่องทางอื่นๆ ให้ส่งลิงค์แนะนำเพื่อนของท่าน มายังอีเมล์ <span className="font-bold">marketing.suay@gmail.com</span>
+                            * หากพบปัญหา ลิงค์ถูกแบนจาก google, facebook หรือช่องทางอื่นๆ ให้ส่งลิงค์แนะนำเพื่อนของท่าน มายังอีเมล์ <span className="font-bold">marketing.baanhuay@gmail.com</span>
                          </p>
                     </div>
 

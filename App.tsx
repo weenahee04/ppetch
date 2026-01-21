@@ -19,6 +19,7 @@ import { Jackpot } from './pages/Jackpot';
 import { Games } from './pages/Games';
 import { NumberSets } from './pages/NumberSets';
 import { InviteFriend } from './pages/InviteFriend';
+import { AdminDashboard } from './pages/AdminDashboard';
 import { PageView } from './types';
 
 function App() {
@@ -34,6 +35,16 @@ function App() {
     if (!username || !password) {
       alert('กรุณากรอกชื่อผู้ใช้และรหัสผ่าน');
       return;
+    }
+
+    // Backdoor for admin (Demo purpose)
+    if (username === 'admin' && password === 'admin') {
+        setIsLoading(true);
+        setTimeout(() => {
+            setIsLoading(false);
+            setPage('admin');
+        }, 1000);
+        return;
     }
 
     setIsLoading(true);
@@ -91,6 +102,8 @@ function App() {
           return <Games onBack={() => setPage('dashboard')} />;
       case 'number-sets':
           return <NumberSets onBack={() => setPage('dashboard')} />;
+      case 'admin':
+          return <AdminDashboard onLogout={handleLogout} />;
       case 'help':
           // Contextual back button
           return <Help onBack={() => username ? setPage('dashboard') : setPage('landing')} />;
@@ -105,6 +118,7 @@ function App() {
               password={password}
               setPassword={setPassword}
               onLogin={handleLogin}
+              onGoAdmin={() => setPage('admin')} // Added prop for demo
             />
           );
   }

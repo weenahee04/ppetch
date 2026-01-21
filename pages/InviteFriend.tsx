@@ -26,9 +26,9 @@ export const InviteFriend: React.FC<InviteFriendProps> = ({ onBack, username }) 
             <div className="flex items-center gap-3">
                 <div className="flex items-center gap-1 cursor-pointer" onClick={onBack}>
                     <div className="w-8 h-8 bg-black rounded flex items-center justify-center border border-gold-300 shadow-sm">
-                        <span className="text-[#eebf34] font-serif font-bold text-xl">S</span>
+                        <span className="text-[#eebf34] font-serif font-bold text-xl">B</span>
                     </div>
-                    <span className="text-black font-black text-2xl tracking-tight hidden sm:block">SUAY</span>
+                    <span className="text-black font-black text-2xl tracking-tight hidden sm:block">บ้านหวย</span>
                 </div>
                 
                 <div className="bg-[#333] hover:bg-[#222] text-white px-3 py-1 rounded cursor-pointer border border-gray-600 hidden md:flex items-center gap-2 transition shadow-inner">
